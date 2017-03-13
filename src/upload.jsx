@@ -84,10 +84,10 @@ function Uploader (ComposedComponent) {
           onUploadProgress: ({ total, loaded }) => {
             this.setState({
               upload: {
-                progress: this.state.sizeLoaded + loaded - this.state.previousLoaded,
+                progress: this.state.upload.progress + loaded - this.state.previousLoaded,
                 total: this.state.upload.total
               },
-              previousLoaded: (total === loaded) ? 0 : loaded;
+              previousLoaded: (total === loaded) ? 0 : loaded
             })
             return
           }
@@ -96,9 +96,9 @@ function Uploader (ComposedComponent) {
         axios.post(url, formData, config)
           .then(res => {
             this.setState({
-              upload: {
-                progress: this.state.upload.progress + 1,
-                total: this.state.upload.total
+              fileUpload: {
+                progress: this.state.fileUpload.progress + 1,
+                total: this.state.fileUpload.total
               }
             })
             // go deeper!!!!
