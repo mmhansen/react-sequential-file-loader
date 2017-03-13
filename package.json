@@ -1,11 +1,11 @@
 {
   "name": "react-sequential-file-sender",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Upload files one at a time through a pluggable react higher order component.",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmhansen/react-sequential-file-loader.git"
+    "url": "https://github.com/mmhansen/react-sequential-file-loader.git"
   },
   "keywords": [
     "react",
@@ -24,7 +24,19 @@
     "react": "^15.4.2",
     "react-dropzone": "^3.12.0"
   },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
