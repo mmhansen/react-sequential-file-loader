@@ -1,0 +1,30 @@
+{
+  "name": "react-sequential-file-sender",
+  "version": "1.0.0",
+  "description": "Upload files one at a time through a pluggable react higher order component.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmhansen/react-sequential-file-loader.git"
+  },
+  "keywords": [
+    "react",
+    "sequential",
+    "file",
+    "uploader"
+  ],
+  "author": "Michael Hansen <hansen.mmb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmhansen/react-sequential-file-loader/issues"
+  },
+  "homepage": "https://github.com/mmhansen/react-sequential-file-loader#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "react": "^15.4.2",
+    "react-dropzone": "^3.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
